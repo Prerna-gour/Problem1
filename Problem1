@@ -1,0 +1,12 @@
+function countChars(str) {
+    str = str.replace(/\s/g, "").toUpperCase();
+    let charCount = {};
+
+    for (let char of str) {
+        charCount[char] = (charCount[char] || 0) + 1;
+    }
+    let uniqueChars = [...new Set(str)]; 
+    uniqueChars.forEach(char => console.log(`${char}-${charCount[char]}`));
+}
+countChars("Amolya Sharma");
+countChars("Chinmay Kulkarni");
