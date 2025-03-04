@@ -10,3 +10,4 @@ function countChars(str) {
 }
 countChars("Amolya Sharma");
 countChars("Chinmay Kulkarni");
+console.log("Working")
